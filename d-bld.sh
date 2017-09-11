@@ -9,4 +9,4 @@ source ./settings/apache2.sh
 source ./settings/mysql.sh
 
 # use environment variables during build
-docker build --tag $my_build_name --build-arg MY_APACHE2_SERVERNAME=$servername --build-arg MY_APACHE2_SITENAME=$websitename --build-arg MY_MYSQL_SERVER_ROOT_PASSWORD=$my_mysql_root_pw ../
+docker build --tag $my_build_name --build-arg MY_APACHE2_SERVERNAME=$servername --build-arg MY_APACHE2_SITENAME=$websitename --build-arg MY_MYSQL_SERVER_ROOT_PASSWORD=$my_mysql_root_pw ../container/
